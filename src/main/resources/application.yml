@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://db-postgresql-nyc3-58577-do-user-22064926-0.g.db.ondigitalocean.com:25060/defaultdb?sslmode=require
+    username: doadmin
+    password: AVNS_wx-MU1HRMzn9VsGsYP6
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  # Optional logging for SQL
+  output:
+    ansi:
+      enabled: always
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
